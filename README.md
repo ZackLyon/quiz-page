@@ -24,17 +24,20 @@
     - Counter variables for how many correct answers in current quiz and for quiz sessions: times pass, fail, taken
     - Function countsAsAYes that takes in answer parameter and returns boolean
     - If statements to evaluate answers and increment correct answer counter as appropriate
-    - Confirm and prompt pop-ups to solicit user input and store it in associated variables:
+    - Confirm, prompt, and alert pop-ups to solicit user input and store it in associated variables:
         - Prompt first name
         - Prompt last name
-        - Confirm that user wants to take test
+        - Confirm that user wants to take test / return if not
         - 3 prompts with yes or no questions
-    - Display results using DOM element
+        - Alert the user that quiz is complete and results are forthcoming
+    - Display results using DOM element and attaching appropriate class
+    - Reset button clears results area, sets correct counter to zero, removes color class
 
 - Create a CSS file with:
     - button styling
     - header styling
     - font family for whole page
+    - class to visually enhance results (green class = good, red class = bad)
 
 - Validation
     - check that buttons work with console.log right after creation
