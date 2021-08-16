@@ -1,4 +1,4 @@
-export { askName, askQuestions, countsAsAYes };
+export { askName, askQuestions, countsAsAYes, changeColors };
 
 function askName(name) {
     const firstName = prompt('What is your first name?');
@@ -7,6 +7,19 @@ function askName(name) {
     return name;
 }
 
+function countsAsAYes(answer) {
+    return answer.charAt(0).toLowerCase() === 'y' ? true : false;
+}
+
+function changeColors(display, thisManyCorrect) {
+    if (thisManyCorrect === 3) {
+        display.classList.add('green');
+    } else if (thisManyCorrect === 2) {
+        display.classList.add('yellow');
+    } else {
+        display.classList.add('red');
+    }
+}
 function askQuestions() {
     let numCorrect = 0;
     let question1 = prompt('Was Silky directly succeeded by Cheedy?');
@@ -25,8 +38,4 @@ function askQuestions() {
         numCorrect++;
     }
     return numCorrect;
-}
-
-function countsAsAYes(answer) {
-    return answer.charAt(0).toLowerCase() === 'y' ? true : false;
 }

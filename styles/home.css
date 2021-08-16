@@ -21,7 +21,7 @@ figcaption {
     font-size: 2em;
 }
 
-p {
+p, #results {
     font-size: 1.4em;
 }
 .img-box {

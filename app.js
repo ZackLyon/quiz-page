@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { askName, askQuestions } from './utils.js';
+import { askName, askQuestions, changeColors } from './utils.js';
 // initialize state
 
 // set event listeners 
@@ -27,6 +27,7 @@ subBtn.addEventListener('click', () => {
     if (!takeQuiz){return;}
     let correctAns = askQuestions();
     alert(`Thank you for taking the quiz! You're results are about to be published.`);
+    changeColors(results, correctAns);
     results.classList.remove('hidden');
     results.textContent = `Hello, ${fullName}! You got ${correctAns} out of 3 questions correct.`;
     
