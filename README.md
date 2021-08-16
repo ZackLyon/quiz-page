@@ -9,3 +9,34 @@
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
 
+
+
+- Create a HTML file with:
+    - A Header with the title
+    - Image of subject
+    - Paragraphs describing subject
+        - A definition tag to explain term
+    - Two images of ancillary characters
+    - Button to take quiz
+
+- Create a JS file with:
+    - DOM elements for button, reset button, and results
+    - Counter variables for how many correct answers in current quiz and for quiz sessions: times pass, fail, taken
+    - Function countsAsAYes that takes in answer parameter and returns boolean
+    - If statements to evaluate answers and increment correct answer counter as appropriate
+    - Confirm and prompt pop-ups to solicit user input and store it in associated variables:
+        - Prompt first name
+        - Prompt last name
+        - Confirm that user wants to take test
+        - 3 prompts with yes or no questions
+    - Display results using DOM element
+
+- Create a CSS file with:
+    - button styling
+    - header styling
+    - font family for whole page
+
+- Validation
+    - check that buttons work with console.log right after creation
+    - check that prompts/confirms are storing answers by console.log of associated variable
+    - Create test: test various combinations of correct and false answers and compare them against expected results
