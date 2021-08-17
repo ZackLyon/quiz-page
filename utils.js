@@ -20,6 +20,7 @@ function changeColors(display, thisManyCorrect) {
         display.classList.add('red');
     }
 }
+
 function askQuestions() {
     let numCorrect = 0;
     let question1 = prompt('Was Silky directly succeeded by Cheedy?');

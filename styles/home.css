@@ -9,30 +9,39 @@
 header {
     color: rgb(200, 227, 222);
     background-color: rgb(0, 93, 64);
+    text-shadow: 3px 3px rgb(0, 5, 3);
+    box-shadow: 0px 10px 5px 2px rgba(0, 5, 3, 0.123);
 }
+
 #main-silky {
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+#main-silky > img {
+    width: 50%;
 }
 
 figcaption {
     font-size: 2em;
 }
 
-p, #results {
+#results {
     font-size: 1.4em;
 }
 .img-box {
     display: flex;
+    height: 400px;
+    width: 1200px;
     justify-content: space-around;
 }
 
 figure > img {
-    height: 80%;
     object-fit: contain;
-}
+    height: 80%;
+} 
 
 .hidden {
     display: none;
@@ -41,12 +50,23 @@ figure > img {
 #quiz-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 button {
     margin: 20px;
+    width: 70px;
     color: rgb(200, 227, 222);
     background-color: rgb(0, 93, 64);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.5, 2);
+    background-color: rgb(1, 141, 97);
 }
 
 .green {

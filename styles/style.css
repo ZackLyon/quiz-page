@@ -50,7 +50,7 @@ header {
     justify-content: center;
     align-content: center;
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
 }
 
 footer {
@@ -59,7 +59,6 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-
 
 h2 {
     font-size: 1.8rem;
@@ -76,10 +75,6 @@ h2 {
 
 header img {
     height: var(--header-height);
-}
-
-p {
-    margin: var(--gutter);
 }
   
 footer {
