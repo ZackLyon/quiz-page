@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { askName, askQuestions, changeColors } from './utils.js';
+
 // initialize state
 
 // set event listeners 
@@ -8,6 +9,7 @@ import { askName, askQuestions, changeColors } from './utils.js';
   // update DOM to reflect the new state
 
   // - DOM elements for button, reset button, and results
+
 const subBtn = document.getElementById('sub-btn');
 const resetBtn = document.getElementById('reset-btn');
 const results = document.getElementById('results');
@@ -17,11 +19,13 @@ const timesFailedEl = document.getElementById('times-failed');
 
 
   // - Counter variables for how many correct answers in current quiz and for quiz sessions: times pass, fail, taken
+
 let timesPassed = 0;
 let timesFailed = 0;
 let timesTaken = 0;
 const fullName = askName();
-  // - Function countsAsAYes that takes in answer parameter and returns boolean
+
+ 
 
   // - If statements to evaluate answers and increment correct answer counter as appropriate
   // - Confirm, prompt, and alert pop-ups to solicit user input and store it in associated variables:
@@ -31,6 +35,7 @@ const fullName = askName();
   //     - 3 prompts with yes or no questions
   //     - Alert the user that quiz is complete and results are forthcoming
   // - Display results using DOM element and attaching appropriate class
+  
 subBtn.addEventListener('click', () => {
     results.classList.add('hidden');
     results.classList.remove('green', 'yellow', 'red');
@@ -50,7 +55,7 @@ subBtn.addEventListener('click', () => {
 });
 
 
-  // - Reset button clears results area, sets correct counter to zero, removes color class
+  // - Reset button clears results area, sets counters to zero, 
 
 resetBtn.addEventListener('click', () => {
     results.classList.add('hidden');
@@ -61,5 +66,4 @@ resetBtn.addEventListener('click', () => {
     timesTakenEl.textContent = timesTaken;
     timesPassedEl.textContent = timesPassed;
     timesFailedEl.textContent = timesFailed;
-    fullName = askName();
 });

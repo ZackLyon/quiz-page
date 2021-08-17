@@ -50,6 +50,10 @@ figure > img {
     object-fit: contain;
     height: 80%;
 } 
+figure > figcaption {
+    display: flex;
+    justify-content: center;
+}
 
 .hidden {
     display: none;

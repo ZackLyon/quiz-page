@@ -7,6 +7,8 @@ function askName(name) {
     return name;
 }
 
+ // - Function countsAsAYes that takes in answer parameter and returns boolean
+ 
 function countsAsAYes(answer) {
     return answer.charAt(0).toLowerCase() === 'y' ? true : false;
 }
